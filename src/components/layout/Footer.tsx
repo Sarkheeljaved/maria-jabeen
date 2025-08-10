@@ -16,20 +16,20 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.instagram.com/i_ma_ria319?igsh=emdwc205MzZ0M2Fp "
                 className="text-amber-200 hover:text-white transition-colors"
               >
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/share/16cXhDCvhX/"
                 className="text-amber-200 hover:text-white transition-colors"
               >
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="text-amber-200 hover:text-white transition-colors"
               >
@@ -42,7 +42,7 @@ export default function Footer() {
               >
                 <Youtube className="h-5 w-5" />
                 <span className="sr-only">Youtube</span>
-              </a>
+              </a> */}
             </div>
           </div>
 

@@ -14,42 +14,42 @@ export default function Gallery() {
       category: "Landscape",
       year: "2023",
       description: "Oil on canvas, 36 × 48 inches",
-      color: "/paining-1",
+      img: "/paining-1",
     },
     {
       title: "Portrait of Serenity",
       category: "Portrait",
       year: "2022",
       description: "Oil on canvas, 24 × 30 inches",
-      color: "/paining-2",
+      img: "/paining-2",
     },
     {
       title: "Urban Abstract #5",
       category: "Abstract",
       year: "2022",
       description: "Mixed media, 40 × 40 inches",
-      color: "/paining-3",
+      img: "/paining-3",
     },
     {
       title: "Coastal Dreams",
       category: "Landscape",
       year: "2021",
       description: "Oil on canvas, 30 × 40 inches",
-      color: "/paining-4",
+      img: "/paining-4",
     },
     {
       title: "Contemplation",
       category: "Portrait",
       year: "2021",
       description: "Oil on canvas, 20 × 24 inches",
-      color: "/paining-5",
+      img: "/paining-5",
     },
     {
       title: "Symphony in Red",
       category: "Abstract",
       year: "2020",
       description: "Acrylic on canvas, 36 × 48 inches",
-      color: "/paining-6",
+      img: "/paining-6",
     },
   ];
 
@@ -107,7 +107,10 @@ export default function Gallery() {
             open={selectedImage !== null}
             onOpenChange={() => setSelectedImage(null)}
           >
-            <DialogContent className="max-w-4xl w-[90vw]">
+            <DialogContent
+              className="max-w-4xl w-[90vw]"
+              style={{ height: "95vh", overflowY: "scroll" }}
+            >
               <DialogClose className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
                 <X className="h-4 w-4" />
                 <span className="sr-only">Close</span>
@@ -115,9 +118,21 @@ export default function Gallery() {
 
               <div className="p-2">
                 <div
-                  className={`aspect-[4/3] bg-gradient-to-br ${artworks[selectedImage]?.color} rounded-lg`}
+                  className={` rounded-lg`}
+                  style={{
+                    width: "100%",
+                    position: "relative",
+                    zIndex: "2",
+                    display:"flex",
+                    justifyContent:"center"
+                  }}
                 >
-                  {/* This would be the actual artwork image */}
+                  <img
+                    src={`/painting-${selectedImage + 1}.jpg`}
+                    width="80%"
+                    alt=""
+                    className=""
+                  />
                 </div>
 
                 <div className="mt-4">
