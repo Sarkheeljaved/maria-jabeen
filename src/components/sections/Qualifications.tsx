@@ -11,7 +11,7 @@ export default function Qualifications() {
       description: "Karachi Pakistan",
     },
     {
-      degree: "BBBA (1 Year)",
+      degree: "BBA (1 Year)",
       institution: "Fedral Urdu University of Arts, Science And Technolog",
       period: "2018 - 2019",
       description: "Karachi Pakistan",
