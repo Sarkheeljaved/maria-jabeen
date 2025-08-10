@@ -106,7 +106,7 @@ export default function Footer() {
               Subscribe to receive updates about new artwork, exhibitions, and
               workshops.
             </p>
-            <form
+            {/* <form
               className="flex gap-2"
               style={{
                 display: "flex",
@@ -126,7 +126,7 @@ export default function Footer() {
                 <Mail className="h-4 w-4 mr-1" />
                 <span>Subscribe</span>
               </Button>
-            </form>
+            </form> */}
           </div>
         </div>
 
