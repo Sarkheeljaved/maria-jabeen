@@ -31,9 +31,9 @@ export default function Header() {
               {item.label}
             </a>
           ))}
-          <Button className="bg-amber-700 hover:bg-amber-800">
+          {/* <Button className="bg-amber-700 hover:bg-amber-800">
             Get in Touch
-          </Button>
+          </Button> */}
         </nav>
 
         {/* Mobile Navigation */}
@@ -55,9 +55,9 @@ export default function Header() {
                   {item.label}
                 </a>
               ))}
-              <Button className="bg-amber-700 hover:bg-amber-800 w-full mt-2">
+              {/* <Button className="bg-amber-700 hover:bg-amber-800 w-full mt-2">
                 Get in Touch
-              </Button>
+              </Button> */}
             </nav>
           </SheetContent>
         </Sheet>
