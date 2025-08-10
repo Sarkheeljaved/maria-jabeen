@@ -3,8 +3,38 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
-
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 export default function Contact() {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!form.current) {
+      console.error("Form reference is not available");
+      return;
+    }
+
+    emailjs
+      .sendForm(
+        "service_bpyxznr",
+        "template_3tqgshf",
+        form.current,
+        "97TlwddoxOxUzMYkM"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message sent successfully!");
+          form.current?.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Failed to send message. Please try again.");
+        }
+      );
+  };
   return (
     <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -28,7 +58,7 @@ export default function Contact() {
                     <Mail className="h-6 w-6 text-amber-700 mt-0.5" />
                     <div>
                       <p className="font-medium text-sm text-gray-500">Email</p>
-                      <p className="text-gray-800">mariaJabeen@gmail.com</p> 
+                      <p className="text-gray-800">mariaJabeen@gmail.com</p>
                     </div>
                   </div>
 
@@ -126,7 +156,7 @@ export default function Contact() {
             <Card>
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-6">Send a Message</h3>
-                <form className="space-y-6">
+                <form ref={form} onSubmit={sendEmail} className="space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <label
@@ -137,8 +167,10 @@ export default function Contact() {
                       </label>
                       <Input
                         id="name"
+                        name="name"
                         placeholder="Your name"
                         className="border-amber-200 focus:border-amber-500"
+                        required
                       />
                     </div>
 
@@ -151,9 +183,11 @@ export default function Contact() {
                       </label>
                       <Input
                         id="email"
+                        name="email"
                         type="email"
                         placeholder="Your email address"
                         className="border-amber-200 focus:border-amber-500"
+                        required
                       />
                     </div>
                   </div>
@@ -167,8 +201,10 @@ export default function Contact() {
                     </label>
                     <Input
                       id="subject"
+                      name="subject"
                       placeholder="What is this regarding?"
                       className="border-amber-200 focus:border-amber-500"
+                      required
                     />
                   </div>
 
@@ -181,8 +217,10 @@ export default function Contact() {
                     </label>
                     <Textarea
                       id="message"
+                      name="message"
                       placeholder="Your message..."
                       className="min-h-[150px] border-amber-200 focus:border-amber-500"
+                      required
                     />
                   </div>
 
