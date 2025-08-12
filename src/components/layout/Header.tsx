@@ -26,7 +26,7 @@ export default function Header() {
             <a
               key={item.label}
               href={item.href}
-              className="text-gray-600 hover:text-amber-700 font-medium transition-colors"
+              className="color hover:text-amber-700 font-medium transition-colors"
             >
               {item.label}
             </a>

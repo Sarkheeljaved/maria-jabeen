@@ -14,7 +14,7 @@ export default function Hero() {
             <span className="block text-amber-700">Brought to Life</span>
           </h1>
 
-          <p className="text-lg text-gray-600 max-w-md">
+          <p className="text-lg color max-w-md">
             Professional painter specializing in contemporary oil paintings,
             realistic portraits, and abstract expressionism.
           </p>

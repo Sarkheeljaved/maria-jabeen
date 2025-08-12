@@ -75,7 +75,7 @@ export default function Qualifications() {
             Qualifications
           </h2>
           <div className="h-1 w-24 bg-amber-600 mx-auto mb-6"></div>
-          <p className="text-gray-600">
+          <p className="color">
             Formal education, professional certifications, and specialized
             skills that inform my artistic practice and professional approach.
           </p>
@@ -103,7 +103,7 @@ export default function Qualifications() {
                     <p className="text-amber-800 font-medium mb-2">
                       {item.institution}
                     </p>
-                    <p className="text-gray-600 text-sm">{item.description}</p>
+                    <p className="color text-sm">{item.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -124,7 +124,7 @@ export default function Qualifications() {
                       {cert.icon}
                       <div className="ml-4">
                         <h4 className="font-semibold">{cert.name}</h4>
-                        <p className="text-gray-600 text-sm">
+                        <p className="color text-sm">
                           {cert.institution} • {cert.year}
                         </p>
                       </div>

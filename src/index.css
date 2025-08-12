@@ -6,7 +6,7 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
-
+    --color: #C19A6B;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
 
@@ -93,8 +93,11 @@
 @layer base {
   * {
     @apply border-border;
+    /* color:  var(--color); */
   }
-
+.color{
+  color: var(--color);
+}
   body {
     @apply bg-background text-foreground;
   }

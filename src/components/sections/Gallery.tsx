@@ -59,7 +59,7 @@ export default function Gallery() {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Gallery</h2>
           <div className="h-1 w-24 bg-amber-600 mx-auto mb-6"></div>
-          <p className="text-gray-600">
+          <p className="color">
             A selection of my most representative works from various periods and
             styles.
           </p>
@@ -86,7 +86,7 @@ export default function Gallery() {
                   <p className="text-amber-700">
                     {artwork.category} • {artwork.year}
                   </p>
-                  <p className="text-sm text-gray-600 mt-1">
+                  <p className="text-sm color mt-1">
                     {artwork.description}
                   </p>
                 </div>
@@ -143,10 +143,10 @@ export default function Gallery() {
                     {artworks[selectedImage]?.category} •{" "}
                     {artworks[selectedImage]?.year}
                   </p>
-                  <p className="mt-2 text-gray-600">
+                  <p className="mt-2 color">
                     {artworks[selectedImage]?.description}
                   </p>
-                  <p className="mt-4 text-gray-800">
+                  <p className="mt-4 color">
                     This piece explores themes of nature and human connection.
                     The composition balances warm and cool tones to create a
                     sense of harmony, while the brushwork adds texture and

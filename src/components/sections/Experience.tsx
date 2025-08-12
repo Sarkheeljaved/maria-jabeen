@@ -114,7 +114,7 @@ export default function Experience() {
             Professional Experience
           </h2>
           <div className="h-1 w-24 bg-amber-600 mx-auto mb-6"></div>
-          <p className="text-gray-600">
+          <p className="color">
             A chronicle of my professional journey, showcasing career milestones
             and notable exhibitions that have shaped my artistic development.
           </p>
@@ -151,13 +151,13 @@ export default function Experience() {
                       <p className="text-amber-700 font-medium mb-3">
                         {job.company} • {job.location}
                       </p>
-                      <p className="text-gray-600 mb-4">{job.description}</p>
+                      <p className="color mb-4">{job.description}</p>
 
                       <div>
-                        <p className="font-medium text-gray-700 mb-2">
+                        <p className="font-medium color mb-2">
                           Key Achievements:
                         </p>
-                        <ul className="list-disc pl-5 space-y-1 text-gray-600 text-sm">
+                        <ul className="list-disc pl-5 space-y-1 color text-sm">
                           {job.achievements.map((achievement, i) => (
                             <li key={i}>{achievement}</li>
                           ))}
@@ -192,7 +192,7 @@ export default function Experience() {
                         </h4>
                         <p className="text-amber-700">{exhibition.venue}</p>
                         <div className="flex justify-between items-center mt-1">
-                          <span className="text-gray-500 text-sm">
+                          <span className="color text-sm">
                             {exhibition.location}
                           </span>
                           <Badge
@@ -215,14 +215,14 @@ export default function Experience() {
               </h3>
               <Card>
                 <CardContent className="p-6">
-                  <ul className="space-y-3 text-gray-700">
+                  <ul className="space-y-3 color">
                     <li className="flex items-start">
                       <span className="inline-block h-2 w-2 rounded-full bg-amber-500 mt-2 mr-2"></span>
                       <div>
                         <p className="font-medium">
                           "The Evolution of Contemporary Oil Painting"
                         </p>
-                        <p className="text-sm text-gray-600">
+                        <p className="text-sm color">
                           Art Review Magazine, 2022
                         </p>
                       </div>
@@ -233,7 +233,7 @@ export default function Experience() {
                         <p className="font-medium">
                           "10 Artists Redefining Portraiture"
                         </p>
-                        <p className="text-sm text-gray-600">
+                        <p className="text-sm color">
                           Modern Painter Quarterly, 2021
                         </p>
                       </div>
@@ -244,7 +244,7 @@ export default function Experience() {
                         <p className="font-medium">
                           "Color Theory and Emotional Response in Abstract Art"
                         </p>
-                        <p className="text-sm text-gray-600">
+                        <p className="text-sm color">
                           International Journal of Art Studies, 2020
                         </p>
                       </div>
@@ -255,7 +255,7 @@ export default function Experience() {
                         <p className="font-medium">
                           "Featured Artist Interview"
                         </p>
-                        <p className="text-sm text-gray-600">
+                        <p className="text-sm color">
                           Art & Design Today, 2019
                         </p>
                       </div>

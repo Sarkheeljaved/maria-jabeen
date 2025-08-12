@@ -119,7 +119,7 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Your email"
-                className="px-4 py-2 rounded-md text-gray-800 flex-grow text-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
+                className="px-4 py-2 rounded-md color flex-grow text-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
                 style={{width:"150px"}}
               />
               <Button type="submit" variant="secondary" size="sm">

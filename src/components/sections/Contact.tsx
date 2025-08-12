@@ -41,7 +41,7 @@ export default function Contact() {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
           <div className="h-1 w-24 bg-amber-600 mx-auto mb-6"></div>
-          <p className="text-gray-600">
+          <p className="color">
             Interested in commissioning a painting or have questions about my
             work? I'd love to hear from you.
           </p>
@@ -57,37 +57,37 @@ export default function Contact() {
                   <div className="flex items-start space-x-4">
                     <Mail className="h-6 w-6 text-amber-700 mt-0.5" />
                     <div>
-                      <p className="font-medium text-sm text-gray-500">Email</p>
-                      <p className="text-gray-800">mariaJabeen@gmail.com</p>
+                      <p className="font-medium text-sm color">Email</p>
+                      <p className="color">mariajabeen766@gmail.com</p>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4">
                     <Phone className="h-6 w-6 text-amber-700 mt-0.5" />
                     <div>
-                      <p className="font-medium text-sm text-gray-500">Phone</p>
-                      <p className="text-gray-800">(+92) 3242446908</p>
+                      <p className="font-medium text-sm color">Phone</p>
+                      <p className="color">(+92) 3242446908</p>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4">
                     <MapPin className="h-6 w-6 text-amber-700 mt-0.5" />
                     <div>
-                      <p className="font-medium text-sm text-gray-500">
+                      <p className="font-medium text-sm color">
                         Karachi
                       </p>
-                      <p className="text-gray-800">Pakistan</p>
+                      <p className="color">Pakistan</p>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4">
                     <Clock className="h-6 w-6 text-amber-700 mt-0.5" />
                     <div>
-                      <p className="font-medium text-sm text-gray-500">
+                      <p className="font-medium text-sm color">
                         Studio Hours
                       </p>
-                      <p className="text-gray-800">Mon-Fri: 10am - 6pm</p>
-                      <p className="text-gray-800">Weekends: By appointment</p>
+                      <p className="color">Mon-Fri: 10am - 6pm</p>
+                      <p className="color">Weekends: By appointment</p>
                     </div>
                   </div>
                 </div>
@@ -96,14 +96,14 @@ export default function Contact() {
 
             <div>
               <h3 className="text-xl font-semibold mb-4">Commission Process</h3>
-              <ol className="space-y-4 text-gray-700">
+              <ol className="space-y-4 color">
                 <li className="flex">
                   <div className="flex-shrink-0 h-8 w-8 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center font-bold mr-3">
                     1
                   </div>
                   <div>
                     <p className="font-medium">Initial Consultation</p>
-                    <p className="text-gray-600 text-sm">
+                    <p className="color text-sm">
                       We'll discuss your vision, requirements, and preferences
                       for the artwork.
                     </p>
@@ -116,7 +116,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="font-medium">Concept and Proposal</p>
-                    <p className="text-gray-600 text-sm">
+                    <p className="color text-sm">
                       I'll provide sketches or digital mockups along with a
                       formal quote.
                     </p>
@@ -129,7 +129,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="font-medium">Creation</p>
-                    <p className="text-gray-600 text-sm">
+                    <p className="color text-sm">
                       With your approval, I'll begin working on the commissioned
                       piece.
                     </p>
@@ -142,7 +142,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="font-medium">Delivery</p>
-                    <p className="text-gray-600 text-sm">
+                    <p className="color text-sm">
                       Once complete, your artwork will be professionally
                       packaged and delivered.
                     </p>
@@ -161,7 +161,7 @@ export default function Contact() {
                     <div className="space-y-2">
                       <label
                         htmlFor="name"
-                        className="text-sm font-medium text-gray-700"
+                        className="text-sm font-medium color"
                       >
                         Name
                       </label>
@@ -177,7 +177,7 @@ export default function Contact() {
                     <div className="space-y-2">
                       <label
                         htmlFor="email"
-                        className="text-sm font-medium text-gray-700"
+                        className="text-sm font-medium color"
                       >
                         Email
                       </label>
@@ -195,7 +195,7 @@ export default function Contact() {
                   <div className="space-y-2">
                     <label
                       htmlFor="subject"
-                      className="text-sm font-medium text-gray-700"
+                      className="text-sm font-medium color"
                     >
                       Subject
                     </label>
@@ -211,7 +211,7 @@ export default function Contact() {
                   <div className="space-y-2">
                     <label
                       htmlFor="message"
-                      className="text-sm font-medium text-gray-700"
+                      className="text-sm font-medium color"
                     >
                       Message
                     </label>
@@ -231,7 +231,7 @@ export default function Contact() {
                     >
                       Send Message
                     </Button>
-                    <p className="text-xs text-gray-500 mt-2 text-center">
+                    <p className="text-xs color mt-2 text-center">
                       I typically respond within 1-2 business days.
                     </p>
                   </div>
